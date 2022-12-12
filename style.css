@@ -3,6 +3,7 @@
 :root {
     --font: 'Montserrat', sans-serif;
     --bg-color: #7882A4;
+    --btn-hover: #858da7;
     --primary-color: #EFEFEF;
 }
 
@@ -29,6 +30,11 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
 h3 {
     font-size: 2rem;
 }
@@ -44,4 +50,23 @@ h3 {
     display: inline-block;
     font-size: 4rem;
     margin: 1rem 0;
+}
+
+.btn-restart {
+    margin-top: 3rem;
+
+    padding: .8rem;
+    border-radius: 5px;
+    border: 2px dotted var(--primary-color);
+
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    background-color: transparent;
+
+    transition: .5s;
+}
+
+.btn-restart:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
 }
